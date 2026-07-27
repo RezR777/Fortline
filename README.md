@@ -34,8 +34,8 @@ fortline-site/
 
 ## Why there's a `server.js`
 
-The Anthropic API key can't be safely used from browser code — anyone could open
-dev tools and steal it. `server.js` is a minimal Express proxy: the browser talks
+The Anthropic API key can't be safely used from browser code, so anyone could open
+dev tools and steal it. `server.js` is essentially a minimal Express proxy: the browser talks
 to it, and it talks to Anthropic using a key that stays server-side only.
 
 ## Running locally
@@ -62,7 +62,7 @@ a `.env` file read by Vite, pointing at your proxy's base URL.
 - **Frontend**: `npm run build` produces a static `dist/` folder deployable to
   Vercel, Netlify, GitHub Pages, etc.
 - **Backend**: `server.js` needs a Node host (Railway, Render, Fly.io, a small VPS).
-  Set `ANTHROPIC_API_KEY` as an environment variable there — never commit it.
+  Set `ANTHROPIC_API_KEY` as an environment variable there never commit it.
 
 ## Things to personalize before going live
 
