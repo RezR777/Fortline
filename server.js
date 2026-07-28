@@ -28,6 +28,7 @@ app.post("/api/claude", async (req, res) => {
       }),
     });
     const data = await response.json();
+    console.log("Anthropic response:", JSON.stringify(data, null, 2));
     res.json(data);
   } catch (err) {
     console.error(err);
