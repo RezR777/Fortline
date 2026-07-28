@@ -2,11 +2,11 @@ import React from "react";
 import { ShieldCheck } from "lucide-react";
 
 const CREDENTIALS = [
-  "Network security & routing (OSPF, BGP, subnetting)",
-  "Penetration testing & web vulnerability labs",
-  "PKI, encryption, and access control",
-  "Packet-level traffic analysis (Wireshark)",
-  "Phishing & social engineering research",
+  "Network security architecture & routing (OSPF, BGP, VLANs, VPNs)",
+  "Penetration testing & web vulnerability assessment",
+  "PKI, encryption, and access control implementation",
+  "Network traffic analysis & threat detection",
+  "Phishing & social engineering defense",
 ];
 
 export default function About() {
@@ -14,15 +14,15 @@ export default function About() {
     <section className="section wrap" id="about">
       <div className="section-head">
         <div className="kicker">Who's behind Fortline</div>
-        <h2 className="section-title">Hands-on training, real-world consulting</h2>
+        <h2 className="section-title">Real-world expertise, practical solutions</h2>
       </div>
       <div className="about-grid">
         <p className="about-text">
-          Fortline is run by an IT and cybersecurity consultant completing a B.S. in Information
-          Technology at the University of North Texas, alongside an A.A.S. in Cybersecurity from
-          North Central Texas College. Every engagement draws on direct, hands-on lab work — not
-          just theory — combined with real freelance IT consulting experience serving clients in
-          the Denton, TX area.
+          Fortline is led by an IT & Cybersecurity engineer with a strong foundation in
+          Information Technology and Cybersecurity, backed by hands-on freelance consulting
+          experience serving businesses throughout the Denton, TX area. Every engagement is
+          grounded in practical, field-tested methods rather than generic advice by bringing the
+          same rigor used to secure enterprise networks to small businesses that need it most.
         </p>
         <ul className="cred-list">
           {CREDENTIALS.map((c) => (
